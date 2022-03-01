@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+      	*{ padding: 0; margin:0; box-sizing: border-box; }
+      	.theme-color{background-color: #f15b26 !important;}
+       .input-field i{ color:#f15b26 !important; }
+
+      	.main{ width:100%; height: 100vh; display: flex; align-items: center; justify-content: center;  flex-direction: column;}
+      	.my-container {
+    min-height: 100vh;
+    font-family: ui-monospace;
+}
+      	.logo{  background: #fff; width:200px; height: 200px; padding: 20px; border-radius: 50%; 
+      		display: flex; align-items: center; justify-content: center;}
+      	.logo img{ width:100% ; height: auto;}
+      	.txt{font-size: 2rem;}
+
+
+         /* label color */
+   .input-field label {
+     color: #000;
+     font-size: 16px;
+   }
+   /* label focus color */
+   .input-field input:focus + label {
+     color: #f15b26 !important;
+   }
+   /* label underline focus color */
+   .input-field input:focus {
+     border-bottom: 1px solid #f15b26 !important;
+     box-shadow: 0 0px 0 0  #f15b26 !important;
+   }
+   /* valid color */
+   .input-field input.valid {
+     border-bottom: 1px solid  #f15b26 !important;
+     box-shadow: 0 1px 0 0  #f15b26 !important;
+   }
+   /* invalid color */
+   .input-field input.invalid {
+     border-bottom: 1px solid red !important;
+     box-shadow: 0 1px 0 0 red !important;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #f15b26 !important
+   }
+   .main1{ padding-left: 10px;  padding: 10px;}
+.logo-login {
+    margin: 71px 0 40px 0;
+}
+.head{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+a.btn-large{ display: block; background-color: #f15b26 !important;}
+      </style>
+    </head>
+<body bgcolor="#111">
+
+	 <div class="container  my-container" style="width:100%; display: flex; justify-content: center; align-items: center;">
+          <div class="col s12  main1" style="width:400px; background: #fff; " >
+          	 <img src="bcil_logo.png" class="logo-login">
+             <p class="txt">Proceed with your</p>
+             <h1 class="head">Login</h1>
+             <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">person</i>
+          <input id="a" type="text" class="validate">
+          <label for="a">User Name</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">vpn_key</i>
+          <input id="icon_prefix1" type="password" class="validate">
+          <label for="icon_prefix1">Password</label>
+        </div>
+      </div>
+      <a  href="dashboard.html" class="waves-effect waves-light btn-large">Login</a>
+    </form>
+  </div>
+          </div>
+      </div>
+ 
+</body>
+</html>

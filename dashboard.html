@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+          *{ padding: 0; margin:0; box-sizing: border-box; }
+        header{background-color: #f15b26 !important; padding:10px;}
+       .button-collapse i {
+    color: #fff;
+    line-height: 1;
+    font-size: 30px;
+}
+.head {
+    font-size: 23px;
+    margin: 0; color: #fff;
+    
+    text-align: center;
+    line-height: 2;
+}
+.row{ margin: 0; }
+ul:not(.browser-default) li {
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+}
+ul li:first-child {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    padding: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li:first-child img{
+      height: 70px;
+      width: auto;
+}
+ul li h2 {
+    font-size: 29px;
+    text-align: center;
+}
+.side-nav {
+    position: sticky;
+    width: 300px;
+   }
+      </style>
+  </head>
+ <body bgcolor="#111"> 
+
+ <div class="container-fluid" style="width:100%; display: flex; justify-content: center; align-items: center;">
+  <div style="width:400px; background: #fff; height: 100vh; position: relative; overflow: hidden;">
+  <header >
+       <div class="row">
+              <div class="col s3">
+                   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">format_align_right</i></a>
+              </div>
+              <div class="col s6">
+                    <h1 class="head">Dashboard</h1>
+              </div>
+              <div class="col s3">
+                              <a href="#" data-activates="slide-out" class="button-collapse" style="float:right;"><i class="material-icons">account_circle</i></a>
+              </div>
+      </div>
+   
+</header>
+  <ul id="slide-out" class="side-nav">
+    <li><img src="logo.png"></li>
+    <li><h2>Menu</h2></li>
+    <li><a href="form.html"> <i class="material-icons">format_align_right</i> Master</a></li>
+    <li><a href="#!"><i class="material-icons">cached</i> Transaction</a></li>
+    <li><a href="#!"><i class="material-icons">content_paste</i>Reports </a></li>
+  
+    
+  </ul>
+</div>
+</div>
+<script>
+ $(".button-collapse").sideNav();
+</script>     
+ </body>
+  </html>
